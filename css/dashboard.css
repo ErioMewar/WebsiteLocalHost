@@ -1,0 +1,114 @@
+:root {
+    --primary-color: rgb(38, 0, 255);
+    --primary-hover-color: rgb(21, 0, 138);
+    --primary-border-color: rgb(27, 187, 199);
+    --primary-text-color: rgb(255, 255, 255);
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    color: var(--primary-text-color);
+    background-color: rgb(88, 88, 88);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1.5s ease-in-out;
+    position: relative;
+  }
+
+  .card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px 60px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    color: var(--primary-text-color);
+    box-shadow: 0 10px 25px rgba(104, 104, 104, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    transition: visibility 3s, opacity 0.5s ease-in-out;
+  }
+
+  #card{
+    transition: visibility 3s, opacity 0.5s ease-in-out;
+  }
+
+  .main-buttton {
+    display: flex;
+    gap: 3rem;
+    margin-top: 20px;
+  }
+
+  .main-buttton a {
+    text-decoration: none;
+  }
+
+  .main-buttton button {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-border-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 10px;
+  }
+
+  .main-buttton button:hover {
+    background-color: var(--primary-hover-color);
+  }
+
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 3s, opacity 0.5s ease-in-out;
+  }
+
+  .fullscreen-button,
+  .toggle-button,
+  .logout-button {
+    position: absolute;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-border-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    z-index: 2;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, visibility 3s, opacity 0.7s ease-in-out;
+  }
+
+  .fullscreen-button:hover,
+  .toggle-button:hover:hover,
+  .logout-button:hover {
+    background-color: var(--primary-hover-color);
+  }
+
+  .fullscreen-button{
+    right: 110px;
+    bottom: 20px;
+  }
+
+  .toggle-button {
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .logout-button {
+    top: 20px;
+    right: 20px;
+    background-color: rgb(218, 0, 0);
+  }
+
+  .logout-button:hover{
+    background-color: rgb(179, 0, 0);
+  }
